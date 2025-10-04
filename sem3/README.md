@@ -8,7 +8,7 @@
 
 библиотека
 
-![alt text](image.png)
+![alt text](./assets/lib.png)
 
 квартиры
 
@@ -17,5 +17,3 @@
 матч
 
 ![alt text](./assets/match.png)
-
-## 3. Переведите E/R диаграммы в реляционные базы данных.
