@@ -27,3 +27,16 @@ ORDER BY
 ## 4
 
 ```sql
+select 
+    p.id
+from
+    requests r
+join
+    frilancers f on r.friloancer_id = f.user_id
+where
+    p.budget > 50000 and f.payment >1500
+
+```
+
+## 5
+
