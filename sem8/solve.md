@@ -40,3 +40,23 @@ where
 
 ## 5
 
+```
+SELECT 
+    f.specializaton AS specialization,
+    ROUND(
+        COUNT(r.id) * 1.0 / COUNT(DISTINCT r.project_id), 
+        2
+    ) AS avg_applications_per_project
+FROM 
+    frilancer f
+JOIN 
+    request r ON f.user_id = r.frilancer_id
+GROUP BY 
+    f.specializaton
+ORDER BY 
+    avg_applications_per_project DESC;
+```
+
+## 6
+
+```
